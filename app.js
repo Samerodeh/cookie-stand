@@ -8,12 +8,12 @@ let seattle = {
     hour:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     gitCustNumber: function(){
 
-      return Math.ceil(getRandomValue(this.mincust,this.maxcust)*this.avgsale);
+      return Math.ceil(getRandomNumber(this.mincust,this.maxcust)*this.avgsale);
     },
 
 
 render : function(){
-    const parentElement = document.getElementById('portfolio');
+    const parentElement = document.getElementById('cookie-stand');
 
 
     let articleElement = document.createElement('article');
@@ -49,11 +49,11 @@ let tokyo = {
     hour:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     gitCustNumber: function(){
 
-      return Math.ceil(getRandomValue(this.mincust,this.maxcust)*this.avgsale);
+      return Math.ceil(getRandomNumber(this.mincust,this.maxcust)*this.avgsale);
     },
 
     render: function(){
-        const parentElement = document.getElementById('portfolio');
+        const parentElement = document.getElementById('cookie-stand');
 
 
         let articleElement=document.createElement('article');
@@ -92,12 +92,12 @@ let tokyo = {
         hour:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
         gitCustNumber: function(){
 
-          return Math.ceil(getRandomValue(this.mincust,this.maxcust)*this.avgsale);
+          return Math.ceil(getRandomNumber(this.mincust,this.maxcust)*this.avgsale);
         },
 
 
         render: function(){
-          const parentElement = document.getElementById('portfolio');
+          const parentElement = document.getElementById('cookie-stand');
 
 
           let articleElement=document.createElement('article');
@@ -136,12 +136,12 @@ let paris = {
     hour:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     gitCustNumber: function(){
 
-      return Math.ceil(getRandomValue(this.mincust,this.maxcust)*this.avgsale);
+      return Math.ceil(getRandomNumber(this.mincust,this.maxcust)*this.avgsale);
     },
 
 
     render: function(){
-      const parentElement = document.getElementById('portfolio');
+      const parentElement = document.getElementById('cookie-stand');
 
 
       let articleElement=document.createElement('article');
@@ -181,12 +181,12 @@ let paris = {
     hour:['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'],
     gitCustNumber: function(){
 
-      return Math.ceil(getRandomValue(this.mincust,this.maxcust)*this.avgsale);
+      return Math.ceil(getRandomNumber(this.mincust,this.maxcust)*this.avgsale);
     },
 
 
     render: function(){
-      const parentElement = document.getElementById('portfolio');
+      const parentElement = document.getElementById('cookie-stand');
 
 
       let articleElement=document.createElement('article');
@@ -219,7 +219,7 @@ let paris = {
   };
 
 
-  function getRandomValue(min, max) {
+  function getRandomNumber(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min);
