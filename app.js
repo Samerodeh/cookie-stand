@@ -106,14 +106,19 @@ SeattleBranch.render();
 console.log(SeattleBranch);
 let tokyo = new Seattle ('tokyo', '3', '24', '1.2', ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm']);
 tokyo.render();
+console.log(tokyo);
 let dubai = new Seattle ('dubai', '11', '38', '3.7', ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm']);
-dubai.render(); 
+dubai.render();
+console.log(dubai); 
 let paris = new Seattle ('paris', '20', '38', '2.3', ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm']);
 paris.render(); 
+console.log(paris);
 let lima = new Seattle ('lima', '2', '16', '4.6', ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm']);
 lima.render();
+console.log(lima);
 let total = new Seattle ('total', '333', '367', '447', '355', '531', '547', '592', '562', '597', '438', '468', '553', '419', '428');
 total.render();
+console.log(total);
 
   function getRandomNumber(min, max) {
     min = Math.ceil(min);
