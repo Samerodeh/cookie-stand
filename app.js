@@ -14,7 +14,7 @@ let Seattle = {
     getNumber : function(){
         for (let i = 0; i< Hours.length; i++) {
             let custNumber = randomCustNumber( this.min, this.max );
-            let cookieNumber = Math.ceil( ( custNumber )*this.avgCSale );
+            let cookieNumber = Math.ceil( ( custNumber )*this.avgSale );
 
 
             console.log(custNumber); 
@@ -443,3 +443,30 @@ render: function () {
   Lima.render();
 
 
+  cookiesStand.addEventListener('submit', eventButton)
+
+  function eventButton(event) {
+   
+    event.preventDefault();
+
+    console.log(event.target.name.value);
+
+    const name = event.target.name.value;
+    const min = event.target.minCust.value;
+    const max = event.target.maxCust.value;
+    const avgSales = event.target.avgSales.value;
+    
+    
+  
+    let cookieLocation = new Location (name, min, max, avgSales);
+    
+    cookieLocation.getNumber();
+    
+    newLocation.render();
+  
+    cookiesForm.reset();
+  
+    
+    console.table(name, min, max, avgSales);
+
+}
