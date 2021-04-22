@@ -443,7 +443,7 @@ render: function () {
   Lima.render();
 
 
-  cookiesStand.addEventListener('submit', eventButton)
+  cookieForm.addEventListener('submit', eventButton)
 
   function eventButton(event) {
    
@@ -458,13 +458,13 @@ render: function () {
     
     
   
-    let cookieLocation = new Location (name, min, max, avgSales);
+    let cookiesLocation = new Location (name, min, max, avgSales);
     
-    cookieLocation.getNumber();
+    cookiesLocation.getNumber();
     
-    newLocation.render();
+    cookiesLocation.render();
   
-    cookiesForm.reset();
+    cookiesLocation.reset();
   
     
     console.table(name, min, max, avgSales);

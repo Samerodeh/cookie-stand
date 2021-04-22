@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100&family=Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
 main section {
     display: grid;
     grid-template-rows:  1fr;
@@ -11,9 +12,20 @@ body {
   margin: auto;
   background-color: rgb(173, 173, 216);
   line-height: 1.5;
-  font-family: 'Orelega One', cursive;
+  
 }
 
+body main {
+    font-family: 'Convergence', sans-serif;
+    color: brown;
+}
+
+.ind { 
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-weight: 700;
+    color: white;
+    
+}
 img {
     width: 100%;
 }
@@ -132,11 +144,18 @@ table {
     font-weight: 700; 
     margin-top: 30%;  
     background-color: rgb(255, 245, 245);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: rgb(3, 122, 122);
 }
 
 
 
+.form {
+    background-color: teal; 
+    color: thistle;
+    font-family: 'Roboto', sans-serif;
+}
 
 
 
