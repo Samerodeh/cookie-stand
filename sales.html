@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Salmon Cookies sales</title> 
+  <title>Salmon Cookies sales</title>
 
-    <link rel="stylesheet" href="./style.css">
-</head >
+  <link rel="stylesheet" href="./style.css">
+</head>
+
 <body class="b">
-    <header> 
+  <header>
 
-      <nav> <a  href="./index.html">main page</a> </nav> 
-           
-    </header>
-    
-        
-      <main>
+    <nav> <a href="./index.html">main page</a> </nav>
 
-<table id="table"></table>  
+  </header>
 
 
-<fieldset>
+  <main>
 
-  <legend>Add New location</legend>
+    <table id="table"></table>
 
-  <form id="cookiesForm">
-    
-      <label for="locationName">Name</label>
-      <input id="locationName" name="locationName" type="text">
-      <label for="minCust">minimum-customers</label>
-      <input id="minCust" type="text">
-      <label for="maxCust">maximum-customers</label>
-      <input id="maxCust" type="text">
-      <label for="avgSales">verage-sales</label>
-      <input id="avgSales" type="text">
-    
-      <button type="submit">Save</button>
 
-  </form>
+    <fieldset class="form">
 
-</fieldset>
+      <legend>Add New location</legend>
 
-    </main>
-    
-    <footer>
+      <form id="cookiesForm">
 
-    </footer>
+        <label for="LocationName">Name</label>
+        <input id="LocationName" name="LocationName" type="text">
+        <label for="minCust">minimum-customers</label>
+        <input id="minCust" type="text">
+        <label for="maxCust">maximum-customers</label>
+        <input id="maxCust" type="text">
+        <label for="avgSales">average-sales</label>
+        <input id="avgSales" type="text">
 
-    <div id='cookie-stand'></div>
+        <button type="submit">Save</button>
 
-    <script src="app.js"></script>
+      </form>
+
+    </fieldset>
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <div id='cookie-stand'></div>
+
+  <script src="app.js"></script>
 
 
 </body>
+
 </html>
